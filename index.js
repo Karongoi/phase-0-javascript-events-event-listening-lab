@@ -1,17 +1,10 @@
-// Step 1: Create a function to add an event listener to the button element.
+// This function adds an event listener to a button with id "button"
 function addingEventListener() {
-    // Step 2: Get a reference to the input element with id="button".
-    const input = document.getElementById('button');
+  const input = document.getElementById('button');
   
-    // Step 3: Create a callback function that will be triggered on a click event.
-    function clickAlert() {
-      alert('I was clicked!');
-    }
-  
-    // Step 4: Add the event listener for the "click" event on the input element.
-    input.addEventListener('click', clickAlert);
-  }
-  
-  // Step 5: Call the addingEventListener function to activate the event listener.
-  addingEventListener();
-  
+  // Add click event listener
+  input.addEventListener('click', () => {
+    // This function will be triggered when the button is clicked
+    console.log('Button clicked!');
+  });
+}
